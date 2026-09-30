@@ -3,7 +3,8 @@
 # Hi, I'm BangerSoul 👋
 ### Senior Backend & LLM Infrastructure Engineer | Open-Source Contributor
 
-[![Available for Freelance](https://img.shields.io/badge/Status-Available%20for%20Hire%20%2F%20Contract-2ea44f?style=for-the-badge&logo=github)](mailto:contact@bangersoul.dev)
+[![Available for Freelance](https://img.shields.io/badge/Status-Available%20for%20Hire%20%2F%20Contract-2ea44f?style=for-the-badge&logo=github)](https://cal.com/bangersoul)
+[![Book a Call](https://img.shields.io/badge/Schedule-15%20Min%20Architecture%20Teardown-0066FF?style=for-the-badge&logo=google-calendar)](https://cal.com/bangersoul)
 [![Python](https://img.shields.io/badge/Python-3.11%20|%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Production%20Ready-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -89,14 +90,29 @@ Available for freelance contracts, fractional engineering, and scoped sprints:
 
 ---
 
-## 📫 Hire Me & Contact
+## 🚀 How to Work Together & Book a Sprint
 
-Looking to solve a tough backend problem, build a custom LLM gateway, or implement private MCP connectors for your team?
+Looking to eliminate connection leaks, build custom Model Context Protocol (MCP) tools, or harden your LLM gateway before the next scaling milestone?
 
+### The 3-Step Sprint Onboarding Process:
+1. **Step 1: 15-Minute Architecture Teardown (Free)**
+   - We audit your current LLM routing, latency bottlenecks, or MCP data requirements.
+   - 📅 **[Schedule a 15-Minute Teardown on Cal.com](https://cal.com/bangersoul)**
+2. **Step 2: Scoped 5-Day Milestone Sprint ($1,500 – $3,500)**
+   - Transparent, flat-rate pricing. Zero open-ended hourly billing.
+   - 50% upfront deposit, 50% upon clean pull request merge and test verification.
+3. **Step 3: Verification & Zero-Downtime Handoff**
+   - 100% hermetic unit test suites, zero CI/CD lint violations, and complete architectural documentation.
+
+---
+
+## 📫 Direct Contact & Availability
+
+- **Booking**: [cal.com/bangersoul](https://cal.com/bangersoul)
 - **GitHub**: [@BangerSoul](https://github.com/BangerSoul)
-- **Email**: Reach out via GitHub profile or repository discussions
-- **Timezone**: Flexible overlap with US (PST/EST) and Europe (CET/GMT)
-- **Turnaround**: Fast, async-first communication with clear PR deliverables and test proof
+- **Email**: `contact@bangersoul.dev` (or via GitHub profile discussions)
+- **Timezone Overlap**: Flexible overlap with US (PST/EST) and Europe (CET/GMT)
+- **Communication**: Async-first, high-cadence PR deliverables with verifiable test proof
 
 ---
 
