@@ -42,6 +42,15 @@ I believe code speaks louder than buzzwords. Here are real-world architectural a
 
 ---
 
+### 3. 💰 Finops Ledger Resilience & Path Traversal Guard in Omi
+* **Project**: [`BasedHardware/omi`](https://github.com/BasedHardware/omi) (20,000+ ⭐ — Open-Source AI Wearable & Ecosystem)
+* **Pull Request**: [`#20020` — `fix(backend): clamp non-negative costs, sanitize date paths, and harden llm_gateway_accounting`](https://github.com/BasedHardware/omi/pull/20020)
+* **The Problem**: In LLM gateway event accounting, negative cost values could decrement the organization's finops cost rollups via `firestore.Increment(-X)`, while float USD estimates were dropped to 0 due to rigid `int` type checks. Furthermore, date strings containing slashes (`/` or `\`) caused accidental Firestore subcollection injection in `llm_gateway_user_days`, and unhandled plan resolution exceptions risked dropping valid billing attempt records.
+* **The Solution**: Engineered non-negative cost clamping, safe float/numeric string parsing with boolean rejection, path separator sanitization on date strings and attempt IDs, and fail-open exception boundaries on usage plan resolution.
+* **Outcome**: **15/15 hermetic tests passing in 0.82s**, 4/4 PR preflight checks passed, finops ledger integrity and single-collection index guarantees verified.
+
+---
+
 ## 💼 Freelance & Consulting Services
 
 Available for freelance contracts, fractional engineering, and scoped sprints:
