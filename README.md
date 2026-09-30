@@ -52,6 +52,15 @@ I believe code speaks louder than buzzwords. Here are real-world architectural a
 
 ---
 
+### 4. 🔐 MCP Token Cache & Base Key Protection in Omi
+* **Project**: [`BasedHardware/omi`](https://github.com/BasedHardware/omi) (20,000+ ⭐ — Open-Source AI Wearable & Ecosystem)
+* **Pull Request**: [`#20023` — `fix(backend): validate identities, clamp index TTLs, and protect prefix keys in mcp_token_cache`](https://github.com/BasedHardware/omi/pull/20023)
+* **The Problem**: In hosted Model Context Protocol (MCP) OAuth token caching, missing fields in client identities caused unhandled `KeyError` crashes during valid session caching, while non-positive index TTLs caused Redis to immediately purge grant token indices. During grant revocation, empty/blank decoded token hashes produced the base prefix key `mcp:oauth:at:`, inadvertently wiping the base key namespace in Redis.
+* **The Solution**: Validated complete identity payload schemas, clamped grant index TTLs to positive values, guarded multi-token revocation against base key deletion, handled un-serializable payloads in HMAC integrity envelopes, and structured 41 hermetic unit tests.
+* **Outcome**: **41/41 unit tests passing in 2.20s**, zero unhandled `KeyError` crashes on MCP OAuth caching, Redis base prefix keys protected from accidental revocation wipes.
+
+---
+
 ## 💼 Freelance & Consulting Services
 
 Available for freelance contracts, fractional engineering, and scoped sprints:
